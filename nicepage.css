@@ -4,7 +4,7 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-.fr-clearfix::after {
+ .fr-clearfix::after {
   clear: both;
   display: block;
   content: "";
@@ -43335,7 +43335,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*end-variables sitestylecss*/
  .u-header {
-  width: 1240px;
+  /* width: 1240px; */
   margin-right: 0;
   margin-left: 0;
   background-image: none;
@@ -43413,9 +43413,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-line-1 {
     width: 940px;
-    margin-top: 20px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: -12px 0 21px;
   }
 }
 @media (max-width: 991px) {
@@ -43437,7 +43435,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-line-1 {
     width: 720px;
-    margin-bottom: 21px;
+    margin-top: -12px;
   }
 }
 @media (max-width: 767px) {
@@ -43462,44 +43460,30 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 575px) {
-   .u-header {
-    min-height: 147px;
-  }
-
   .u-header .u-image-1 {
-    margin-top: 2px;
-    margin-left: 0;
+    margin-left: calc(((100% - 1140px) / 2) + 423px);
   }
 
   .u-header .u-menu-1 {
-    width: auto;
-    margin-top: -53px;
-    margin-right: auto;
-    margin-left: calc(((100% - 340px) / 2) + -169px);
-  }
-
-  .u-header .u-nav-1 {
-    letter-spacing: 0px;
-    font-weight: 700;
+    margin-top: -102px;
+    margin-right: calc(((100% - 340px) / 2) + 140px);
+    margin-left: calc(((100% - 1140px) / 2) + 352px);
   }
 
   .u-header .u-btn-1 {
-    margin-top: -33px;
-    margin-right: auto;
-    margin-left: calc(((100% - 340px) / 2) + -120px);
+    margin-right: calc(((100% - 1140px) / 2) + 365px);
   }
 
   .u-header .u-text-1 {
     font-size: 1.5rem;
-    width: auto;
-    margin-top: -27px;
-    margin-left: calc(((100% - 340px) / 2) + -376px);
+    margin-top: 23px;
+    margin-left: calc(((100% - 1140px) / 2) + 502px);
   }
 
   .u-header .u-line-1 {
     width: 340px;
-    margin-top: 91px;
-    margin-bottom: 2px;
+    margin-top: -20px;
+    margin-bottom: 50px;
   }
 }
 .u-footer .u-sheet-1 {
@@ -43547,12 +43531,18 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: 0 auto;
 }
 
+.u-footer .u-btn-1 {
+  background-image: none;
+  margin-top: 0;
+  padding: 0;
+}
+
 .u-footer .u-text-2 {
   width: 631px;
   margin: 0 auto 12px;
 }
 
-.u-footer .u-btn-1 {
+.u-footer .u-btn-2 {
   background-image: none;
   padding: 0;
 }

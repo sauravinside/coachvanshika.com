@@ -763,6 +763,7 @@ ol {
 .u-effect-slide-bottomleft .u-back-slide {
   transition: all 500ms ease;
 }
+
 .u-effect-slide-bottomleft:hover .u-back-slide,
 .u-effect-slide-bottomleft.u-effect-active .u-back-slide {
   transform: translate(100%, -100%);
